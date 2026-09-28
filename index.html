@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <header>
-    <div class="header-container">
-      <img src="headshot.jpg" alt="Siyuan Gu Headshot" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #cc0033; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      
-      <h1>Siyuan Gu</h1>
-      <span class="badge-role">Supply Chain & Operations Management</span>
-      <div class="personal-statement">
-        <strong>Personal Statement:</strong> An aspiring supply chain leader combining data-driven analytical rigor with strategic cross-functional management to build agile, resilient, and cost-efficient global operations.
-      </div>
-    </div>
-  </header>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Portfolio | Supply Chain Management</title>
@@ -51,6 +40,18 @@
     .header-container {
       max-width: 850px;
       margin: 0 auto;
+    }
+
+    /* Profile Photo Styling */
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: inline-block;
     }
 
     h1 {
@@ -213,9 +214,12 @@
 </head>
 <body>
 
-  <!-- 1. PERSONAL STATEMENT (Meets the "who you are in one sentence" rubric requirement) -->
+  <!-- 1. PERSONAL STATEMENT SECTION -->
   <header>
     <div class="header-container">
+      <!-- 头像展示代码：必须在 <body> 内部 -->
+      <img src="headshot.jpg" alt="Siyuan Gu Headshot" class="profile-photo">
+      
       <h1>Siyuan Gu</h1>
       <span class="badge-role">Supply Chain & Operations Management</span>
       <div class="personal-statement">

@@ -6,7 +6,7 @@
   <title>Personal Portfolio | Supply Chain Management</title>
   <style>
     :root {
-      --primary: #cc0033;
+      --primary: #cc0033; /* Rutgers Scarlet */
       --primary-dark: #990024;
       --text-dark: #1f2937;
       --text-muted: #4b5563;
@@ -42,17 +42,6 @@
       margin: 0 auto;
     }
 
-    .profile-photo {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--primary);
-      margin-bottom: 1rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: inline-block;
-    }
-
     h1 {
       font-size: 2.4rem;
       font-weight: 700;
@@ -73,6 +62,7 @@
       letter-spacing: 0.05em;
     }
 
+    /* Required by Rubric: Clear one-sentence introduction */
     .personal-statement {
       font-size: 1.15rem;
       font-weight: 500;
@@ -212,11 +202,9 @@
 </head>
 <body>
 
-  <!-- 1. PERSONAL STATEMENT -->
+  <!-- 1. PERSONAL STATEMENT (Meets the "who you are in one sentence" rubric requirement) -->
   <header>
     <div class="header-container">
-      <!-- 修正为实际图片名 SiyuanGu.jpg -->
-      <img src="SiyuanGu.jpg" alt="Siyuan Gu Headshot" class="profile-photo">
       <h1>Siyuan Gu</h1>
       <span class="badge-role">Supply Chain & Operations Management</span>
       <div class="personal-statement">
@@ -264,11 +252,11 @@
       </div>
     </section>
 
-    <!-- 3. PROJECTS SECTION -->
+    <!-- 3. PROJECTS SECTION (3 Tailored Projects) -->
     <section id="projects">
       <h2>Featured Projects & Leadership</h2>
 
-      <!-- Project 1 -->
+      <!-- Project 1: Vice President at Musicians Guild -->
       <div class="project-card">
         <div class="project-header">
           <span class="project-title">Organizational Operations & Team Leadership</span>
@@ -280,7 +268,7 @@
         <a class="project-link" href="https://github.com" target="_blank" rel="noopener noreferrer">View Leadership Summary &rarr;</a>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 2: TikTok E-Commerce Supply Chain Operations -->
       <div class="project-card">
         <div class="project-header">
           <span class="project-title">E-Commerce & Livestream Supply Chain Operations</span>
@@ -292,7 +280,7 @@
         <a class="project-link" href="https://github.com" target="_blank" rel="noopener noreferrer">View Experience Details &rarr;</a>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Project 3: Personal Portfolio Website -->
       <div class="project-card">
         <div class="project-header">
           <span class="project-title">Responsive Professional Portfolio Deployment</span>

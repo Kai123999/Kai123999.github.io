@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siyuan Gu | Supply Chain & Operations Portfolio</title>
+  <style>
+    :root {
+      --primary: #cc0033;
+      --primary-dark: #990024;
+      --text-main: #111827;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #d1d5db;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background-color: var(--bg);
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 3px solid var(--primary);
+      padding: 3.5rem 1.5rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .avatar-wrapper {
+      margin-bottom: 1.25rem;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      background-color: #f1f5f9;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      display: inline-block;
+      background-color: #fee2e2;
+      color: var(--primary);
+      padding: 0.35rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    .statement-box {
+      background-color: #fffaf0;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-size: 1.15rem;
+      color: var(--text-main);
+      line-height: 1.6;
+      font-weight: 500;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-category {
+      margin-bottom: 1.25rem;
+    }
+
+    .skill-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      background-color: #f1f5f9;
+      color: var(--text-main);
+      padding: 0.45rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      background-color: #ffffff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .project-role {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .project-link:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="avatar-wrapper">
+        <img src="SiyuanGu.jpg?v=2" alt="Siyuan Gu Headshot" class="avatar">
+      </div>
+      <h1>Siyuan Gu</h1>
+      <span class="tagline">Supply Chain & Operations Management</span>
+      <div class="statement-box">
+        <strong>Personal Statement:</strong> An aspiring supply chain leader combining data-driven analytical rigor with strategic cross-functional management to build agile, resilient, and cost-efficient global operations.
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2>Professional & Technical Skills</h2>
+
+      <div class="skill-category">
+        <div class="category-title">Operations & Supply Chain Core:</div>
+        <div class="badge-list">
+          <span class="badge">E-Commerce Supply Chain Strategy</span>
+          <span class="badge">Inventory Management & Fulfillment</span>
+          <span class="badge">Demand Forecasting</span>
+          <span class="badge">Logistics & Reverse Logistics</span>
+          <span class="badge">Lean Operations & Process Flow</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-title">Analytics & Digital Tools:</div>
+        <div class="badge-list">
+          <span class="badge">Advanced Excel Modeling</span>
+          <span class="badge">Data Analysis (Python / SQL)</span>
+          <span class="badge">Tableau & Power BI</span>
+          <span class="badge">Process Mapping</span>
+          <span class="badge">Git & GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-title">Leadership & Management:</div>
+        <div class="badge-list">
+          <span class="badge">Large-Scale Team Leadership (300+ Members)</span>
+          <span class="badge">Crisis Management</span>
+          <span class="badge">Cross-Functional Coordination</span>
+          <span class="badge">Conflict Resolution & Negotiation</span>
+          <span class="badge">Vendor & Partner Collaboration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects & Leadership</h2>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">Organizational Operations & Team Leadership</span>
+          <span class="project-role">Vice President | Rutgers Musicians Guild</span>
+        </div>
+        <p class="project-desc">
+          Directed daily operations, event logistics, and committee scheduling for a 300+ member student organization. Managed fast-paced event execution under strict resource constraints, resolved cross-team bottlenecks, and instituted structured delegation workflows to ensure high engagement and reliable operational delivery.
+        </p>
+        <a class="project-link" href="https://github.com/Kai123999" target="_blank" rel="noopener noreferrer">View Leadership Summary &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">E-Commerce & Livestream Supply Chain Operations</span>
+          <span class="project-role">Operations Intern | TikTok Shop</span>
+        </div>
+        <p class="project-desc">
+          Gained hands-on exposure to end-to-end supply chain mechanics within TikTok's fast-paced e-commerce ecosystem. Analyzed high-velocity inventory flow, order fulfillment cycles, and reverse logistics under volatile demand surges during live sales events. Collaborated across merchant support, warehouse operations, and logistics partners to identify bottlenecks and ensure timely deliveries, deepening practical insights into modern dynamic supply chain management.
+        </p>
+        <a class="project-link" href="https://github.com/Kai123999" target="_blank" rel="noopener noreferrer">View Experience Details &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">Responsive Professional Portfolio Deployment</span>
+          <span class="project-role">Web Development Project</span>
+        </div>
+        <p class="project-desc">
+          Designed, built, and deployed a responsive personal portfolio website hosted on GitHub Pages. Structured according to industry accessibility standards to showcase professional competencies, analytical capabilities, and leadership background to potential employers and recruiters.
+        </p>
+        <a class="project-link" href="https://github.com/Kai123999/Kai123999.github.io" target="_blank" rel="noopener noreferrer">View Repository &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Siyuan Gu. Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
